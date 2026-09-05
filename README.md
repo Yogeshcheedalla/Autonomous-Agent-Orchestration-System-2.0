@@ -1,17 +1,17 @@
-# 🌌 AKANSHA — Windows AI Operating Layer & JARVIS Desktop Assistant
+# 🌌 AKANSHA — Autonomous Windows AI Operating Layer & Desktop Assistant
 
 <div align="center">
 
 <img src="docs/assets/akansha-logo.png" width="160" alt="AKANSHA Logo" style="border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 200, 255, 0.3);" />
 
-<h3>🌌 AKANSHA — Windows AI Operating Layer & JARVIS Desktop Assistant</h3>
+<h3>🌌 AKANSHA — Autonomous Windows AI Operating Layer & Desktop Assistant</h3>
 
-**A Native, Autonomous Windows AI Operating Layer & Real-Time Voice Desktop Assistant**
+**A Native, Autonomous Windows AI Operating Layer & Real-Time Voice Assistant**
 
 [![Platform](https://img.shields.io/badge/Platform-Windows%2011%20%7C%20Win32-0078D4?style=flat&logo=windows)](https://microsoft.com)
-[![Electron](https://img.shields.io/badge/Desktop-Electron%2044.2.0-47848F?style=flat&logo=electron)](https://electronjs.org)
-[![React](https://img.shields.io/badge/Frontend-React%2019%20%2B%20Vite-61DAFB?style=flat&logo=react)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/Core-TypeScript%20Node%2016-3178C6?style=flat&logo=typescript)](https://typescriptlang.org)
+[![Architecture](https://img.shields.io/badge/Architecture-Autonomous%20AI%20OS-7928CA?style=flat)](https://github.com)
+[![React](https://img.shields.io/badge/Frontend-Glassmorphic%20React%2019-61DAFB?style=flat&logo=react)](https://react.dev)
+[![Engine](https://img.shields.io/badge/Engine-TypeScript%20%2B%20Win32%20Bridge-3178C6?style=flat&logo=typescript)](https://typescriptlang.org)
 [![Security](https://img.shields.io/badge/Security-AES--256%20Vault%20%2B%20Prompt%20Firewall-success)](https://github.com)
 
 </div>
