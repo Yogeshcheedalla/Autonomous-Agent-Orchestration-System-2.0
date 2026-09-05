@@ -1,0 +1,70 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+dist-electron/
+dist-server/
+build/
+release/
+out/
+*.nsis.7z
+*.blockmap
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.pem
+*.key
+*.vault
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Runtime data & Databases
+*.sqlite
+*.sqlite3
+*.db
+*.db-journal
+storage/
+temp/
+tmp/
+scratch/
+
+# Local Model Weights & Caches (Keep repo lightweight)
+models/
+weights/
+*.gguf
+*.bin
+*.onnx
+*.safetensors
+
+# Editor & OS files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Diagnostic & Coverage
+coverage/
+.nyc_output/
+*.lcov

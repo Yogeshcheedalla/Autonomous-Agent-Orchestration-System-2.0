@@ -1,0 +1,86 @@
+{
+  "name": "jarvis-an",
+  "version": "1.0.0",
+  "description": "AKANSHA · Windows AI Operating Layer & Autonomous Assistant",
+  "main": "dist-electron/main.js",
+  "scripts": {
+    "server": "tsx server/index.ts",
+    "client": "vite",
+    "dev": "concurrently -n \"SERVER,CLIENT\" -c \"cyan,magenta\" \"npm run server\" \"npm run client\"",
+    "build": "vite build",
+    "compile:electron": "tsc -p electron/tsconfig.json",
+    "compile:server": "tsc -p server/tsconfig.json",
+    "pack:win": "vite build && npm run compile:electron && npm run compile:server && electron-builder --win --dir",
+    "build:desktop": "vite build && npm run compile:electron && npm run compile:server && electron-builder",
+    "electron:dev": "concurrently -n \"SERVER,CLIENT,ELECTRON\" -c \"cyan,magenta,green\" \"npm run server\" \"npm run client\" \"wait-on http://localhost:5173 && npm run compile:electron && electron .\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "lucide-react": "^1.41.0",
+    "systeminformation": "^5.33.8",
+    "ws": "^8.21.3"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.4.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@types/ws": "^8.18.1",
+    "@vitejs/plugin-react": "^6.1.1",
+    "concurrently": "^10.0.5",
+    "cross-env": "^10.1.0",
+    "electron": "^44.2.0",
+    "electron-builder": "^26.15.3",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "tsx": "^4.23.13",
+    "typescript": "^7.0.2",
+    "vite": "^8.2.2",
+    "wait-on": "^9.1.0"
+  },
+  "build": {
+    "appId": "com.akansha.aios",
+    "productName": "AKANSHA",
+    "directories": {
+      "output": "release"
+    },
+    "files": [
+      "dist/**/*",
+      "dist-electron/**/*",
+      "dist-server/**/*",
+      "build/icon.ico",
+      "package.json"
+    ],
+    "extraResources": [
+      {
+        "from": "build",
+        "to": "build"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "AKANSHA",
+      "uninstallDisplayName": "AKANSHA AI Operating System"
+    }
+  }
+}

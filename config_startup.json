@@ -1,0 +1,10 @@
+{
+  "startWithWindows": true,
+  "startMinimized": false,
+  "enableVoiceOnStartup": true,
+  "greetOnReady": true,
+  "greetingFrequency": "once_per_day",
+  "minimizeToTrayOnClose": true,
+  "globalShortcut": "CommandOrControl+Space",
+  "lastGreetingDate": "2026-09-05"
+}
