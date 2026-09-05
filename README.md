@@ -2,7 +2,9 @@
 
 <div align="center">
 
-![AKANSHA Logo](build/icon.ico)
+<img src="docs/assets/akansha-logo.png" width="160" alt="AKANSHA Logo" style="border-radius: 24px; box-shadow: 0 8px 32px rgba(0, 200, 255, 0.3);" />
+
+<h3>🌌 AKANSHA — Windows AI Operating Layer & JARVIS Desktop Assistant</h3>
 
 **A Native, Autonomous Windows AI Operating Layer & Real-Time Voice Desktop Assistant**
 
